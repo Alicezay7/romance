@@ -5,9 +5,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class HomepageGit {
+public class Homepagegit {
     String mainUrl = "https://romanceabroad.com/";
     WebDriver driver;
     String currentUrlSearch;
@@ -23,7 +24,6 @@ public class HomepageGit {
     String name = "Al";
     By BUTTON_SUBMIT = By.xpath("//a");
     int number = 3;
-
 
     @BeforeMethod
     public void setUp(){
@@ -72,7 +72,5 @@ public class HomepageGit {
     public void afterActions(){
         driver.quit();
     }
-
-
 
 }
